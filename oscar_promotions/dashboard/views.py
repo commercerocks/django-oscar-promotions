@@ -196,7 +196,7 @@ class CreateSingleProductView(CreateView):
 
 class CreateImageView(CreateView):
     model = Image
-    fields = ['name', 'link_url', 'image', 'site']
+    fields = ['name', 'link_url', 'cta_text', 'image', 'site']
 
 
 class CreateMultiImageView(CreateView):
@@ -315,7 +315,7 @@ class UpdateSingleProductView(UpdateView):
 
 class UpdateImageView(UpdateView):
     model = Image
-    fields = ['name', 'link_url', 'image', 'site']
+    fields = ['name', 'link_url', 'cta_text', 'image', 'site']
 
 
 class UpdateMultiImageView(UpdateView):
