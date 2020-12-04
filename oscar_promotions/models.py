@@ -179,7 +179,7 @@ class Image(AbstractPromotion):
     link_url = ExtendedURLField(
         _('Link URL'), blank=True,
         help_text=_('This is where this promotion links to'))
-    cta_text = models.CharField(_('CTA Text'), blank=True, help_text=_('Call to action text'), max_length=255)
+    cta_text = models.CharField(_('CTA Text'), help_text=_('Call to action button text'), max_length=255)
     image = models.ImageField(
         _('Image'), upload_to=app_settings.OSCAR_PROMOTIONS_FOLDER,
         max_length=255)
